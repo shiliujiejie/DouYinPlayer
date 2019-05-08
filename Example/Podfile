@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+use_frameworks!
+
+target 'DouYinPlayer_Example' do
+  pod 'DouYinPlayer', :path => '../'
+
+  target 'DouYinPlayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
