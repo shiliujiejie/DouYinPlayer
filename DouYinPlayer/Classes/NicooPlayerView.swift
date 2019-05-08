@@ -227,8 +227,8 @@ open class NicooPlayerView: UIView {
     }()
     private lazy var draggedStatusButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named:"forward"), for: .normal)
-        button.setImage(UIImage(named: "backward"), for: .selected)
+        button.setImage(NicooImgManager.foundImage(imageName: "forward"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "backward"), for: .selected)
         button.isUserInteractionEnabled = false
         return button
     }()
@@ -242,7 +242,7 @@ open class NicooPlayerView: UIView {
     /// 暂停按钮
     private lazy var pauseButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "pause"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "pause"), for: .normal)
         button.backgroundColor = UIColor(white: 0.0, alpha: 0.5)
         button.imageEdgeInsets.left = 5
         button.layer.cornerRadius = 27.5

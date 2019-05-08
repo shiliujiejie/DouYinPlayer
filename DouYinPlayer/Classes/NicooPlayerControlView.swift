@@ -32,16 +32,16 @@ class NicooPlayerControlView: UIView {
     
     lazy var closeButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: ""), for: .normal)
-        button.setImage(UIImage(named: "back"), for: .selected)
-        button.setImage(UIImage(named: "back_hight"), for: .highlighted)
+        button.setImage(NicooImgManager.foundImage(imageName: ""), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "back"), for: .selected)
+        button.setImage(NicooImgManager.foundImage(imageName: "back_hight"), for: .highlighted)
         button.addTarget(self, action: #selector(closeButtonClick(_:)), for: .touchUpInside)
         return button
     }()
     lazy var munesButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "share"), for: .normal)
-        button.setImage(UIImage(named: "share_hight"), for: .highlighted)
+        button.setImage(NicooImgManager.foundImage(imageName: "share"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "share_hight"), for: .highlighted)
         button.addTarget(self, action: #selector(munesButtonClick(_:)), for: .touchUpInside)
         button.isHidden = true   // 默认隐藏
         return button
@@ -72,8 +72,8 @@ class NicooPlayerControlView: UIView {
     }()
     lazy var replayButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "replay"), for: .normal)
-        button.setImage(UIImage(named: "replay_hight"), for: .highlighted)
+        button.setImage(NicooImgManager.foundImage(imageName: "replay"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "replay_hight"), for: .highlighted)
         button.addTarget(self, action: #selector(NicooPlayerControlView.replayButtonClick(_:)), for: .touchUpInside)
         return button
     }()
@@ -120,8 +120,8 @@ class NicooPlayerControlView: UIView {
         slider.contentMode = ContentMode.scaleAspectFit
         slider.minimumTrackTintColor = UIColor.orange
         slider.maximumTrackTintColor = UIColor.clear
-        slider.setThumbImage(UIImage(named: "sliderflash"), for: .normal)
-        slider.setThumbImage(UIImage(named: "sliderHightLight"), for: .highlighted)
+        slider.setThumbImage(NicooImgManager.foundImage(imageName: "sliderflash"), for: .normal)
+        slider.setThumbImage(NicooImgManager.foundImage(imageName: "sliderHightLight"), for: .highlighted)
         slider.addTarget(self, action: #selector(NicooPlayerControlView.sliderValueChange(_:)),for:.valueChanged)
         slider.addTarget(self, action: #selector(NicooPlayerControlView.sliderAllTouchBegin(_:)), for: .touchDown)
         slider.addTarget(self, action: #selector(NicooPlayerControlView.sliderAllTouchEnd(_:)), for: .touchCancel)
@@ -147,23 +147,23 @@ class NicooPlayerControlView: UIView {
     }()
     lazy var playOrPauseBtn: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "pause"), for: .normal)
-        button.setImage(UIImage(named: "play"), for: .selected)
+        button.setImage(NicooImgManager.foundImage(imageName: "pause"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "play"), for: .selected)
         button.addTarget(self, action: #selector(NicooPlayerControlView.playOrPauseBtnClick(_:)), for: .touchUpInside)
         return button
     }()
     lazy var screenLockButton: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "unlock"), for: .normal)
-        button.setImage(UIImage(named: "lockscreen"), for: .selected)
+        button.setImage(NicooImgManager.foundImage(imageName: "unlock"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "lockscreen"), for: .selected)
         button.addTarget(self, action: #selector(NicooPlayerControlView.screenLockButtonClick(_:)), for: .touchUpInside)
         button.isHidden = true
         return button
     }()
     lazy var fullScreenBtn: UIButton = {
         let button = UIButton(type: .custom)
-        button.setImage(UIImage(named: "NicooPlayer_fullscreen"), for: .normal)
-        button.setImage(UIImage(named: "shrinkScreen"), for: .selected)
+        button.setImage(NicooImgManager.foundImage(imageName: "NicooPlayer_fullscreen"), for: .normal)
+        button.setImage(NicooImgManager.foundImage(imageName: "shrinkScreen"), for: .selected)
         button.addTarget(self, action: #selector(NicooPlayerControlView.fullScreenBtnClick(_:)), for: .touchUpInside)
         button.isHidden = true
         

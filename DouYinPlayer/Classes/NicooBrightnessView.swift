@@ -14,7 +14,7 @@ extension UINavigationController { // 用于状态栏的显示，样式
 class NicooBrightnessView: UIView {
     
     lazy var brightnessImage: UIImageView = {
-        let imageV = UIImageView(image: UIImage(named: "player_brightness"))
+        let imageV = UIImageView(image: NicooImgManager.foundImage(imageName: "player_brightness"))
         return imageV
     }()
     lazy var titleLab: UILabel = {
