@@ -25,15 +25,10 @@
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		658BBC42D21ED023D5015F0A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		924CFA2BA7548C07A551D3DA /* Pods_DouYinPlayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYinPlayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A0D43BDDEF531F36DDBBF7D /* Pods-DouYinPlayer_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYinPlayer_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DouYinPlayer_Tests/Pods-DouYinPlayer_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A351AFFA3DEAE87164A07872 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		C0556E3F4A9B070156FE19CD /* Pods_DouYinPlayer_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DouYinPlayer_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58BCCF542F218327FBB5DF8 /* Pods-DouYinPlayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYinPlayer_Example.release.xcconfig"; path = "Target Support Files/Pods-DouYinPlayer_Example/Pods-DouYinPlayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E9E2D2122C605D66249DB15B /* Pods-DouYinPlayer_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DouYinPlayer_Tests.release.xcconfig"; path = "Target Support Files/Pods-DouYinPlayer_Tests/Pods-DouYinPlayer_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				924CFA2BA7548C07A551D3DA /* Pods_DouYinPlayer_Example.framework */,
-				C0556E3F4A9B070156FE19CD /* Pods_DouYinPlayer_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -62,7 +56,6 @@
 			children = (
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for DouYinPlayer */,
-				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				F15DBC5641A3F323E9958423 /* Pods */,
 				150ACF46A162CFD4E0A955F3 /* Frameworks */,
@@ -99,23 +92,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACE81AFB9204008FA782 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
-				607FACE91AFB9204008FA782 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		607FACE91AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,8 +107,6 @@
 			children = (
 				3954CBBB75DB781F9CF447C6 /* Pods-DouYinPlayer_Example.debug.xcconfig */,
 				C58BCCF542F218327FBB5DF8 /* Pods-DouYinPlayer_Example.release.xcconfig */,
-				9A0D43BDDEF531F36DDBBF7D /* Pods-DouYinPlayer_Tests.debug.xcconfig */,
-				E9E2D2122C605D66249DB15B /* Pods-DouYinPlayer_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
